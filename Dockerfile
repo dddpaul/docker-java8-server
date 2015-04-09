@@ -1,13 +1,13 @@
-# Base Java 7 image for servers
+# Base Java 8 image for servers
 # VERSION 0.1
 
 FROM smile/nginx
 
 MAINTAINER Pavel Derendyaev <pderendyaev@smile-net.ru>
 
-# Install Oracle Java 7
-ENV JAVA_VER 7
-ENV JAVA_HOME /usr/lib/jvm/java-7-oracle
+# Install Oracle Java 8
+ENV JAVA_VER 8
+ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 RUN echo 'deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main' >> /etc/apt/sources.list && \
     echo 'deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main' >> /etc/apt/sources.list && \
     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys C2518248EEA14886 && \
